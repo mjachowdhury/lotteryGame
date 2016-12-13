@@ -1,6 +1,7 @@
 <!DOCTYPE html>
+<!--Author : Mohammed Jahangir Alom. Student ID : R00144214 Email: mohammed.alom@mycit.ie-->
 <html lang="en">
-
+ 
 <head>
     <meta charset="UTF-8">
 
@@ -8,7 +9,7 @@
 
     <!-- Google's jQuery link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    
+     
     <!-- Latest compiled and minified CSS */ -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -20,6 +21,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
     </script>
 
+     
     <style>
         @import url(style.css);
         /* This is a much better way to import a Google Font */
@@ -33,8 +35,8 @@
             <h1 id=>Lottery Game!!</h1>
             <h2 id="underline">How to Play Instructions</h2>
             <p>You start the game with &euro;10 in virtual money (on us!!).
-                <br> Enter 4 distinct numbers between 1 and 20 (1 and 20 inclusive!).
-                <br> Press the "Play Hand" button to generate the lottery drawing(cross your fingers!!). This and each subsequent drawing costs you &euro;1.
+                <br> You will get random four numbers for your lottery between 1 and 20 (1 and 20 inclusive!).
+                <br> Press the "Play" button to generate the lottery drawing(cross your fingers!!). This and each subsequent drawing costs you &euro;1.
                 <br> Your winnings are based on how many of your numbers chosen match with the lottery results.
                 <br>Here is a table showing your winning potential:</p>
             <div class="container-fluid">
@@ -70,13 +72,13 @@
                     <div class="span10">
                         <h2 id="underline">Now Let's Get Playing!!!</h2>
 						
-			<h2>User Lottery Numbers: <span id = "your-number"></span></h2>
-			<h2> Actual lottery Numbers: <span id = "lottery-number"></span></h2>
+						<h2> <span class ="number"> User Lottery Numbers:</span> </h2><h2><span id = "your-number"></span></h2>
+						<h2> <span class ="number"> Actual Lottery Numbers:</span> </h2><h2><span id = "lottery-number"></span></h2> 
 						 
                         <div id="output"></div>
                         <h2>Your Money: </h2>
                         <h3 id="playerFunds"></h3>
-                        <button id="ticketButton" type="button" class="btn btn-primary btn-lg btn-fluid">Play Hand!!</button>
+                        <button id="ticketButton" type="button" class="btn btn-primary btn-lg btn-fluid">Play!!</button>
                     </div>
                 </div>
             </div>
