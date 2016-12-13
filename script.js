@@ -16,44 +16,9 @@ function playHand() {
         return;
     }
 
-  /*  var userNumbers = [];
-    var num1 = (document.getElementById('num1'));
-    var num2 = (document.getElementById('num2'));
-    var num3 = (document.getElementById('num3'));
-    var num4 = (document.getElementById('num4'));
-
-    // Makes Certain that user input is stored as an integer \\
-	
-    num1 = parseInt(num1.value);
-    num2 = parseInt(num2.value);
-    num3 = parseInt(num3.value);
-    num4 = parseInt(num4.value);
-
-    userNumbers.push(num1, num2, num3, num4);
-    //console.log(userNumbers);
-    for (var i = 0; i < userNumbers.length; i++) {
-        if (userNumbers[i] > 0 && userNumbers[i] < 21) {
-
-        } else {
-            output.innerHTML = "<span class='error'>Read the directions and try again!!</span>";
-            return;
-        }
-        if (userNumbers[i] == userNumbers[i + 1]) {
-            output.innerHTML = "<span class='error'>Read the directions and try again!!</span>";
-            return;
-        }
-    }*/
+   
     userMoney -= 1;
     playerFunds.innerHTML = "&euro;" + userMoney;
-
-	
-
-   // console.log("You pressed the button");
-    //console.log(userMoney);
-	
-    //var lotteryNumbers = generateNumbers();
-	
-	//var userNumbers = generateNumbers();
 	
 	var lotteryNumbers = lotteryNumber();
 	
@@ -79,23 +44,7 @@ function userNumber() {
   yournumber.innerHTML = player1 + " ," +player2 + "," + player3 + " ," +player4;
   return [player1, player2, player3, player4];
 }	
-/*
-function generateNumbers() {
-    var lotteryNumbers = [];
-	var userNumbers = [];
-    for (var i = 0; i < 4; i++) {
-        lotteryNumbers.push(Math.round(Math.random() * 20))
-		userNumbers.push(Math.round(Math.random() * 20))
-    }
-  //  console.log(lotteryNumbers);
-  
-	underline.innerHTML = lotteryNumbers;
-	underline.innerHTML = userNumbers; 
-	
-    return lotteryNumbers;
-	return userNumbers;	
-}
-*/
+ 
 
 function compare(lottery, user) {
     var matchingNumbers = 0;
